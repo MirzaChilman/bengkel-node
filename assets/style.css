@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+nav.black {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100px;
+  padding: 10px 100px;
+}
+
+nav .logo {
+  padding: 22px 20px;
+  height: 80px;
+  float: left;
+  font-style: 24px;
+  transition: 0.3s;
+}
+
+nav.black .logo {
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav.black ul li a {
+  color: #ffffff;
+}
+
+nav ul li a:focus {
+  outline: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+nav ul li a.active {
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+section.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url('./images/4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.content p {
+  width: 900px;
+  margin: 30px;
+  text-align: justify;
+  font-style: 20px;
+  line-height: 30px;
+}
