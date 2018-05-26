@@ -1,44 +1,54 @@
 <% include ../partials/header %>
-  <div class="wrapper">
+  <div class="wrapper" id="section0">
     <nav>
-      <ul class="coba">
+      <ul>
         <li>
-          <a href="">Home</a>
+          <a href="#section0" id="link1">Home</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="#section2" id="link2">Servis</a>
         </li>
         <li>
-          <a href="">Partners</a>
+          <a href="#section3" id="link3">Pekerjaan</a>
         </li>
         <li>
-          <a href="" class="active">
-            Contact Us
-          </a>
+          <a href="#section4" id="link3">Partner</a>
+        </li>
+        <li>
+          <a href="#section5" id="link3">Artikel</a>
+        </li>
+        <li>
+          <a href="#section6" id="link3">Kontak</a>
         </li>
       </ul>
     </nav>
   </div>
-  <section class="sec1"></section>
-  <section>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae eum eveniet aspernatur voluptatibus dignissimos
-    quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste consequatur, aperiam expedita nostrum provident
-    magnam doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae eum eveniet aspernatur
-    voluptatibus dignissimos quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste consequatur, aperiam
-    expedita nostrum provident magnam doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae
-    eum eveniet aspernatur voluptatibus dignissimos quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste
-    consequatur, aperiam expedita nostrum provident magnam doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing
-    elit. Voluptatum recusandae eum eveniet aspernatur voluptatibus dignissimos quis. Necessitatibus ipsam laboriosam, cumque
-    quaerat voluptates, iste consequatur, aperiam expedita nostrum provident magnam doloribus? Lorem ipsum dolor, sit amet
-    consectetur adipisicing elit. Voluptatum recusandae eum eveniet aspernatur voluptatibus dignissimos quis. Necessitatibus
-    ipsam laboriosam, cumque quaerat voluptates, iste consequatur, aperiam expedita nostrum provident magnam doloribus? Lorem
-    ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae eum eveniet aspernatur voluptatibus dignissimos
-    quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste consequatur, aperiam expedita nostrum provident
-    magnam doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae eum eveniet aspernatur
-    voluptatibus dignissimos quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste consequatur, aperiam
-    expedita nostrum provident magnam doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum recusandae
-    eum eveniet aspernatur voluptatibus dignissimos quis. Necessitatibus ipsam laboriosam, cumque quaerat voluptates, iste
-    consequatur, aperiam expedita nostrum provident magnam doloribus?
+  <section id="section1" class="sec1">
+    <% include ./mainsec %>
   </section>
+  <section>
+    <div class="container">
+      <div class="row coba">
+
+      </div>
+    </div>
+  </section>
+  <section id="section2">
+    <% include ./servis %>
+  </section>
+
+  <section id="section3" class="py-5" style="background-color: rgba(240, 240, 240);">
+    <% include ./perk %>
+  </section>
+
+  <section id="section4" class="py-5" style="background-color: rgba(250, 250, 250);">
+    <% include ./partner %>
+  </section>
+
+  <section id="section5" class="py-5 sec2" style="background-color: rgba(240, 240, 240);">
+    <% include ./artikel %>
+  </section>
+
+
 
   <% include ../partials/footer %>
