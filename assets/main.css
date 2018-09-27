@@ -95,3 +95,8 @@
   height: 120px;
   border-radius: 50%;
 }
+
+.card {
+  border-radius: 0px;
+  border: 0px solid black;
+}

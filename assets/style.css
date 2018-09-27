@@ -78,15 +78,18 @@ nav ul li a.active {
 section.sec1 {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('./images/4.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url('./images/4.jpg');
   background-size: cover;
   background-position: center;
 }
 
 section.sec2 {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(100, 100, 100, 0.6), rgba(100, 100, 100, 0.7)), url('./images/artikel2.jpg');
+  background: linear-gradient(
+      rgba(100, 100, 100, 0.6),
+      rgba(100, 100, 100, 0.7)
+    ),
+    url('./images/artikel2.jpg');
   background-size: cover;
   background-position: center;
 }
