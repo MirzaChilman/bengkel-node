@@ -17,7 +17,7 @@ const homeRoutes = require('./routes/home');
 
 /* CONFIG */
 app.set('view engine', 'ejs');
-app.use('/assets', express.static(__dirname+'/assets'));
+app.use('/assets', express.static(__dirname + '/assets'));
 app.use(bodyParser.urlencoded({ extended: true }));
 /* END CONFIG */
 
@@ -25,6 +25,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', homeRoutes);
 /* END USE ROUTES */
 
-app.listen(3000 || process.env.PORT, process.env.IP, () => {
+app.listen(process.env.PORT || 3000, process.env.IP, () => {
   console.log('server started');
 });
