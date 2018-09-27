@@ -17,7 +17,7 @@ const homeRoutes = require('./routes/home');
 
 /* CONFIG */
 app.set('view engine', 'ejs');
-app.use('/assets', express.static('assets'));
+app.use('/assets', express.static(__dirname+'/assets'));
 app.use(bodyParser.urlencoded({ extended: true }));
 /* END CONFIG */
 
